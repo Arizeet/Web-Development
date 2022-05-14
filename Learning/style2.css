@@ -1,0 +1,17 @@
+#first {
+    background-color: orange;
+    color: white;
+}
+
+#second {
+    color: blue;
+}
+
+.red {
+    color: blue;
+}
+
+.bg-blue {
+    background-color: green;
+    color: white
+}
