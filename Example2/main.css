@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: rgb(247, 243, 25);
+    color: crimson;
+    padding: 10px;
+}
+header h1{
+    margin: 0;
+    display: inline;
+}
+nav ul{
+    margin: 0;
+    display: inline;
+}
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    background-color: antiquewhite;
+    padding: 5px 10px;
+    margin: 2px;
+}
+nav ul li a{
+    color: blue;
+}
+.row::after{
+    clear: both;
+}
+.col{
+    background-color: goldenrod;
+    border-radius: 10px;
+    padding: 1% 0% 1% 15%;
+    margin: .5%;
+    width: 17.3%;
+    float: left;
+}
+footer{
+    clear: both;
+}
