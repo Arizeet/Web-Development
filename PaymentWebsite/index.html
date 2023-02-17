@@ -6,13 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Form</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
 </head>
 <body>
     <form action="">
-        <h1>Payment Form</h1>
-        <h2>Contant Information</h2>
-        <p>FULL NAME<br><input type="text" name="name" id="name" required placeholder="Arizeet Behera" class="name"></p>
+        <div class="container">
+            <h1>Payment</h1>
+        </div>
+        <div class="payment-method">
+            <h3>Choose payment method below</h3>
+            <label for="credit-card">
+                <input type="radio" name="payment-method" id="credit-card" value="credit-card" class="payment-method">
+                <img src="./creditcard.png" alt="Credit-Card">
+            </label>
+            <label for="paypal">
+                <input type="radio" name="payment-method" id="paypal" value="PayPal" class="payment-method">
+                <img src="./PayPal-Logo.png" alt="PayPal">
+            </label>
+                     
+            <label for="amazon">
+                <input type="radio" name="payment-method" id="amazon" value="Amazon" class="payment-method">
+                <img src="./amazon.png" alt="Amazon">
+            </label>
+        </div>
+        <div class="info flex wrap">
+            <div class="bill-info">
+                <h3><p class="number">&ThickSpace; 1 &ThickSpace;</p> &ThinSpace;Billing Info</h3>
 
+                <p class="input">FULL &ThinSpace; NAME<br><input type="text" name="name" id="name" required placeholder="Purvi Mahapatra" class="input-area"></p>
+
+                <p class="input">BILLING &ThinSpace;ADDRESS <br><input type="text" name="address" id="address" required placeholder="Prasanti Vihar" class="input-area"></p>
+                <div class="flex">
+                    <p class="city">CITY<br><input type="text" name="city" id="city" required placeholder="Bhubanswar" class="city-input"></p>
+
+                    <p class="city-zip">ZIP &ThinSpace;CODE<br><input type="number" name="city" id="city" required placeholder="751024" class="city-input"></p>
+                </div>
+                
+
+                <p class="input">COUNTRY <br><select name="country" id="country" class="input-area">
+                    <option value="india">India</option>
+                    <option value="africa">Africa</option>
+                    <option value="china">China</option>
+                    <option value="canada">Canada</option>
+                    <option value="others">Other</option>
+                </select></p>
+            </div>
+            <div class="payment-info">
+                <h3><p class="number"> &ThickSpace; 2&ThickSpace;</p> &ThinSpace;Payment Info</h3>
+
+                <p class="input">CARDHOLDER'S &ThinSpace;NAME<br><input type="text" name="name" id="payment-name" required placeholder="Arizeet Behera" class="input-area"></p>
+
+                <p class="input">CARD &ThinSpace;NUMBER<br><input type="number" name="card-no" id="card-no" required placeholder="1234-5678-9012" class="input-area"></p>
+                <div class="flex expiry">
+                    <p class="expiry">EXPIRY&ThinSpace; MONTH <br><select name="exp-month" id="exp-month" class="expiry-input">
+                        <option value="1">Jan-01</option>
+                        <option value="2">Feb-02</option>
+                        <option value="3">Mar-03</option>
+                        <option value="4">Apr-04</option>
+                        <option value="5">May-05</option>
+                        <option value="6">Jun-06</option>
+                        <option value="7">Jul-07</option>
+                        <option value="8">Aug-08</option>
+                        <option value="9">Sep-09</option>
+                        <option value="10">Oct-10</option>
+                        <option value="11">Nov-11</option>
+                        <option value="12">Dec-12</option>
+                    </select></p>
+                
+                    <p class="expiry">EXPIRY&ThinSpace; YEAR <br><select name="exp-year" id="exp-year" class="expiry-input">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                        <option value="2031">2031</option>
+                        <option value="2032">2032</option>
+                        <option value="2033">2033</option>
+                        <option value="2034">2034</option>
+                    </select></p>
+                </div>
+                
+
+                <p class="input">CVC &ThinSpace;NUMBER<br><input type="password" name="cvc" id="cvc" required placeholder="123" class="input-area"></p>
+            </div>
+        </div>
+        <div class="nav flex wrap">
+            <p class="return flex" id="store"><a href="./store.html">RETURN TO STORE</a></p>
+            <div class="nav-flex flex">
+                <p class="back"><a href="./shipping.html">BACK TO SHIPPING</a></p>
+                <!-- <p class="proceed"><a href="./proceed.html" style="color: white;">PROCEED</a></p> -->
+                <p>
+                    <input type="submit" value="PROCEED" class="proceed-button">
+                </p>
+            </div>
+        </div>
     </form>
 </body>
 </html>
