@@ -5,7 +5,6 @@ input.name::-moz-placeholder {
 * {
     margin: 0;
     padding: 0;
-    /* border: 0px; */
     font-family: 'Manrope', sans-serif;
 }
 
@@ -79,7 +78,6 @@ p {
 .expiry-input {
     width: 20vw;
     height: 5vh;
-    /* justify-content: space-between; */
 }
 
 a {
@@ -120,8 +118,13 @@ img {
     border-radius: 5px;
     background-color: #f1f1f1;
     border: 1px solid #dcdcdc;
-    width: 250px;
-    height: 150px;
+    width: 22vw;
+    height: 13vw;
+}
+
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px 0 black;
 }
 
 [type=radio] {
