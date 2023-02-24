@@ -1,12 +1,14 @@
 body {
-    background-color: beige;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* background-color: beige; */
+    background: -moz-linear-gradient(right, red, green);
+    background: linear-gradient(to bottom, rgb(16, 16, 16) , rgb(91, 91, 91));
 }
 h1, h2{
-    color: crimson;
+    color: rgb(255, 255, 255);
 }
 a,li{
-    color: blue;
+    color: rgb(255, 255, 255);
 }
 .secondary{
     background-color: beige;

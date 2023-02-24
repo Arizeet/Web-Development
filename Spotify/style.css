@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: white;
+}
+.sidebar{
+    width: 210px;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    background-color: #000;
+}
+.home{
+    width: 100vw;
+}
+.icon>img {
+    width: 125px;
+}
+.flex {
+    display: flex;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+.space{
+    justify-content: space-between;
+}
+.home{
+    background: linear-gradient(to bottom,rgb(36, 15, 54) 0%,black 100%);
+    background-attachment: fixed;
+}
